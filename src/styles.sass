@@ -1,1 +1,129 @@
-/* You can add global styles to this file, and also import other style files */
+$realwhite: #f0ecde
+$white: #E6E6E6
+$liteblue: #93B5C6
+$green: #53dd88
+$acs: #6B84E8
+$gray: #3A4750
+$dark: #242a31
+$black: #181c22
+
+*
+    margin: 0px
+    padding: 0px
+    font-family: monospace
+    font-style: Courier New
+    font-weight: bold
+    h1
+        color: #00ff00
+        font-size: 35px
+        align-items: center
+        flex-direction: column
+        text-align: center 
+    h2
+        color: #013220
+        font-size: 22px
+        align-items: center
+        flex-direction: column
+        text-align: center 
+    a
+        font-size: 15px
+        text-decoration: none
+        color: #00ff00
+        &:hover
+            text-transform: uppercase
+    p        
+        display: flex
+        align-items: center
+        flex-direction: column
+        text-align: center 
+            
+
+.differ
+    border-bottom: 10px dotted $liteblue
+    min-width: 350px
+    max-width: 1200px
+    margin-left: auto
+    margin-right: auto
+    margin-top: 10px
+    margin-bottom: 10px
+
+
+
+header
+    margin-bottom: 20px
+    display: flex
+    flex-flow: row nowrap
+    justify-content: flex-start
+    align-items: center
+    .menu
+        flex-grow: 1
+    ul 
+        display: flex
+        flex-flow: row nowrap
+        margin: 0
+        padding: 0
+        font-size: 16px
+        line-height: 18px
+        list-style: none
+    li
+        margin-right: 10px
+        margin-left: 10px
+    .menu li:last-child 
+        margin-right: 0
+    a 
+        padding: 8px 10px
+        color: #000
+    .logo
+        .h1 
+        margin-right: 30px
+        margin-left:5%
+    .active
+        display: block
+        padding: 8px 10px
+        color: #fff
+        background-color: #00ff00
+        border-radius: 8px
+        text-transform: uppercase
+        letter-spacing: .27em
+
+footer
+    color: #fff
+    justify-content: flex-start
+    align-items: center
+    padding: 10px 5% 10px 5%
+    margin: 30px 5% 0px 5%
+    border-radius: 10px 10px 0px 0px
+    padding: 10px
+    min-height: 15px
+    display: flex
+    justify-content: space-between
+    background-color: #00ff00
+    p
+        font-size: 15px
+//main
+
+.container
+    display: flex
+    justify-content: center
+    padding: 100px 5% 100px 5%
+.block
+    max-width: 90%
+.text
+    display: flex
+    align-items: center
+    flex-direction: column
+    text-align: center 
+    max-width: 300px
+h1
+    text-align: center
+
+#title
+    h1
+        font-size: 8vw
+        color: #013220
+    min-height: 700px
+    background-image: url("./assets/img/main.jpg")
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+

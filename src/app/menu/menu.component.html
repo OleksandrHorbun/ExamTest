@@ -1,1 +1,14 @@
-<p>menu works!</p>
+<header>
+  <div class="logo">
+    <h1>Природні пам'ятки України</h1>
+  </div>
+  <div class="menu" id="navmenu">
+    <ul>
+      <li><a routerLink = "/"><div class="btns {{ifactive1}}" id="btnаfirst"><span>Головна</span></div></a></li>
+      <li><a href="#gallery"><div class="btn"><span>Галерея</span></div></a></li>
+      <li><a href="#functions"><div class="btn"><span>Функції</span></div></a></li>
+      <li><a routerLink = "/users" routerLinkActive="active-link"><div class="btns {{ifactive2}}" id="btnlast"><span>Користувачі</span></div></a></li>
+    </ul>
+  </div>
+    
+</header>
