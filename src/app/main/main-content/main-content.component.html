@@ -1,22 +1,40 @@
-<div class="container" id="gallery">
+<div class="container" id="galler">
     <div class="block">
-        <div class="text"><p>Цей сайт створений трьома ентузіастами для полегшення виконання лабораторних робіт з веб програмування. Нашою метою було зробити те, чим би нам самим було зручно користуватись. Якщо є бажання додати ще якусь функціональність, то звертайтеся за електроною поштою example@gmail.com або example2@ukr.net</p></div>
-    <h1 class="textAlignCentr mainh1">Галерея</h1>
-        <div>  
-            
-            <div class="functionalnist">
-                <div class="text"><div class="textAlignCentr"><h2>{{articles[0].name}} </h2></div><p>{{articles[0].opys}}</p></div>
-                <div class="text"><div class="textAlignCentr"><h2>{{articles[1].name}} </h2></div><p>{{articles[1].opys}}</p></div>
-                <div class="text"><div class="textAlignCentr"><h2>{{articles[2].name}} </h2></div><p>{{articles[2].opys}}</p></div>
+        <div class="text"><h2>Цей сайт створений трьома ентузіастами для полегшення виконання лабораторних робіт з веб програмування. Нашою метою було зробити те, чим би нам самим було зручно користуватись. Якщо є бажання додати ще якусь функціональність, то звертайтеся за електроною поштою example@gmail.com або example2@ukr.net</h2></div>
+        <div class="line"></div>
+        <h1 class="textAlignCentr mainh1">Галерея</h1>
+        <div class="gallery">   
+            <div class="one_article">
+                <img class="img_gall" src="{{articles[0].image}}">
+                <div class="text"><h2>{{articles[0].name}}</h2></div>
+                <div class="text"><p>{{articles[0].opys}}</p></div>
+                <div class="{{visible[0]}}"><div class="text">{{articles[0].full_opys}}</div></div>
+                <img class="button_img_gall" (click)="changeVisible(0)" src="{{opened[0]}}">
+            </div>
+            <div class="one_article">
+                <img class="img_gall" src="{{articles[1].image}}">
+                <div class="text"><h2>{{articles[1].name}}</h2></div>
+                <div class="text"><p>{{articles[1].opys}}</p></div>
+                <div class="{{visible[1]}}"><div class="text">{{articles[1].full_opys}}</div></div>
+                <img class="button_img_gall" (click)="changeVisible(1)" src="{{opened[1]}}">
+            </div>
+            <div class="one_article">
+                <img class="img_gall" src="{{articles[2].image}}">
+                <div class="text"><h2>{{articles[2].name}}</h2></div>
+                <div class="text"><p>{{articles[2].opys}}</p></div>
+                <div class="{{visible[2]}}"><div class="text">{{articles[2].full_opys}}</div></div>
+                <img class="button_img_gall" (click)="changeVisible(2)" src="{{opened[2]}}">
             </div>
         </div>
     </div>
     </div>
-    <div class="differ"></div>
+    
+<div class="differ"></div>
 
 <div class="container" id="functions">
     <div class="block">
-        <h1 class="mainh1">Функції</h1>    
+        <h1 class="mainh1">Функції</h1>
+        <div class="line"></div>    
         <div class="Teacher">
             
             <div class="text">

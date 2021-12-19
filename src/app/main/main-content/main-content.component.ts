@@ -29,12 +29,27 @@ export class MainContentComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.service.count$.subscribe((count) => this.VstavkaHTML(count));
-    this.service.getArticle().subscribe(
-    (art)=>{
-      this.articles = art;
+    this.ToSubscribe()
+    this.changeVisible(0)
+    this.changeVisible(1)
+    this.changeVisible(2)
+  }
+  
+  opened:string[] = ["../assets/img/open.png", "../assets/img/open.png", "../assets/img/open.png"]
+  visible:string[] = ["", "", ""]
+  changeVisible(num:number) {
+    if (this.visible[num] == ""){
+      this.visible[num] = "nodisplay" //display:NONE
+      this.opened[num] = "../assets/img/open.png" //Icon to open
     }
-    );
+    else{
+      this.visible[num] = "" //Visible
+      this.opened[num] = "../assets/img/close.png" //Icon to close
+    }
   }
 
+}
+
+function num(num: any) {
+  throw new Error('Function not implemented.');
 }
