@@ -3,6 +3,7 @@
         <div class="text"><h2>Цей сайт створений трьома ентузіастами для полегшення виконання лабораторних робіт з веб програмування. Нашою метою було зробити те, чим би нам самим було зручно користуватись. Якщо є бажання додати ще якусь функціональність, то звертайтеся за електроною поштою example@gmail.com або example2@ukr.net</h2></div>
         <div class="line"></div>
         <h1 class="textAlignCentr mainh1">Галерея</h1>
+        <div class="line"></div>
         <div class="gallery">   
             <div class="one_article">
                 <img class="img_gall" src="{{articles[0].image}}">
@@ -31,16 +32,23 @@
     
 <div class="differ"></div>
 
-<div class="container" id="functions">
+<div class="section" id="Third">
     <div class="block">
-        <h1 class="mainh1">Функції</h1>
-        <div class="line"></div>    
-        <div class="Teacher">
-            
-            <div class="text">
-                <div><p>Доктор технічних наук, доцент, доцент кафедри мережевих та інтернет технологій.  Вища освіта: Національний університет оборони України. Магістр військового управління.</p></div>
+        <h1>Functs</h1>
+        <form (submit)="onSubmit()">      
+            <input name="name" type="text" id="inputName" class="feedback-input" placeholder="Name" />   
+            <input name="email" type="text" id="inputEmail" class="feedback-input" placeholder="Email" />
+            <textarea name="text" class="feedback-input" id="inputText" placeholder="Comment"></textarea>
+            <input type="submit" value="SUBMIT"/>
+            <div class="answer {{visibility}}">
+                Ваше замовлення буже оформлено на {{inputName$}}, ваш Email: {{inputEmail$}}, послуга: {{inputText$}}. Якщо ви підтверджуєте своє замовлення натисніть SUBMIT ще раз.
             </div>
-        </div>
+            
+        </form>
+        
+    </div>
+    
+</div>
     
     </div>
     
