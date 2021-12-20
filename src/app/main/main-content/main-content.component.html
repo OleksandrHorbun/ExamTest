@@ -31,25 +31,62 @@
     </div>
     
 <div class="differ"></div>
-
-<div class="section" id="Third">
+<!-- 
+<div class="container" id="functions">
     <div class="block">
-        <h1>Functs</h1>
+        <h1>Функції</h1>
         <form (submit)="onSubmit()">      
-            <input name="name" type="text" id="inputName" class="feedback-input" placeholder="Name" />   
-            <input name="email" type="text" id="inputEmail" class="feedback-input" placeholder="Email" />
-            <textarea name="text" class="feedback-input" id="inputText" placeholder="Comment"></textarea>
-            <input type="submit" value="SUBMIT"/>
-            <div class="answer {{visibility}}">
-                Ваше замовлення буже оформлено на {{inputName$}}, ваш Email: {{inputEmail$}}, послуга: {{inputText$}}. Якщо ви підтверджуєте своє замовлення натисніть SUBMIT ще раз.
-            </div>
-            
+            <input name="name" type="text" id="inputName" class="input" placeholder="Your Name" />   
+            <input name="email" type="text" id="inputEmail" class="input" placeholder="Your Email" />
+            <textarea name="text" class="input" id="inputText" placeholder="Your Comment"></textarea>
+            <input type="submit" value="SUBMIT">
+            <div class="answer {{visibility}}"><div class="text"><p>Дякуємо за Ваше повідомлення, його можна переглянути на іншій сторінці</p></div></div>
+
         </form>
         
     </div>
     
-</div>
-    
-    </div>
-    
-    </div>
+</div> -->
+<!-- SASS
+form
+        max-width: 420px
+        margin: 40px
+
+  .input
+    color: $main1
+    font-family: Arial, sans-serif
+    font-size: 18px
+    border-radius: 2px
+    line-height: 22px
+    background-color: transparent
+    border: 3px solid $main2
+    transition: all 0.3s
+    padding: 13px
+    margin-bottom: 15px
+    width: 100%
+    box-sizing: border-box
+    outline: 0
+
+    &:focus
+      border: 3px solid $main1
+
+  textarea
+    height: 150px
+    line-height: 150%
+    resize: none
+
+  [type="submit"]
+    width: 100%
+    background: $main2
+    border-radius: 2px
+    border: 0
+    cursor: pointer
+    color: $realwhite
+    font-size: 24px
+    padding-top: 10px
+    padding-bottom: 10px
+    transition: all 0.3s
+    margin-top: -4px
+    font-weight: 700
+    margin-bottom: 15px
+-->

@@ -11,7 +11,6 @@ $black: #181c22
     margin: 0px
     padding: 0px
     font-family: monospace
-    font-style: Courier New
     font-weight: bold
     h1
         color: #00ff00
@@ -26,7 +25,7 @@ $black: #181c22
         flex-direction: column
         text-align: center 
     a
-        font-size: 15px
+        font-size: 20px
         text-decoration: none
         color: #00ff00
         &:hover
@@ -49,6 +48,7 @@ $black: #181c22
 
 
 header
+    width: 90%
     margin-bottom: 20px
     display: flex
     flex-flow: row nowrap
@@ -74,7 +74,7 @@ header
         color: #000
     .logo
         .h1 
-        margin-right: 30px
+        margin-right: 40px
         margin-left:5%
     .active
         display: block
@@ -153,6 +153,10 @@ footer
     &:hover
         width: 40px
 
+
+    
+
+
 #title
     h1
         font-size: 8vw
@@ -163,3 +167,32 @@ footer
     background-position: center
     background-repeat: no-repeat
     background-size: cover
+
+
+
+
+//media
+
+@media (min-width: 800px)
+  .header
+    li
+      float: left
+    
+    a
+        padding: 20px 30px
+
+    .menu
+      max-height: none
+
+@media screen and (max-width: 800px)
+    .gallery
+        flex-direction: column
+        align-items: center
+    *
+        h1
+            font-size:20px
+            margin-left: 0
+            margin-right: 0
+        a
+            font-size:14px
+    
